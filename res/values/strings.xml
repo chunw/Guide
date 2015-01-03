@@ -1,0 +1,55 @@
+<resources>
+
+    <string name="statusDescText">Status:</string>
+    <string name="demoLocationFile">demoLocations</string>
+    <string name="tour1LocationFile">tour1Locations</string>
+    <string name="tour2LocationFile">tour2Locations</string>
+    <string name="tourLocationFile">tourLocations</string>
+    <string name="timeLog">timeLog</string>
+    <string name="IOBreakChar">/</string>
+    <string name="IOMidChar">!</string>
+    <string name="locationLog">locationLog</string>
+    <string name="title_activity_splash">Guide</string>
+    <string name="teamManager">Team Manager: Alex Lamana</string>
+    <string name="softwareArchitect">Software Architect: Bryant Dang</string>
+    <string name="guiDesigner">GUI Designer: Janie Wang</string>
+    <string name="qaManager">QA Manager: Ko Dokmai</string>
+    <string name="appName">Guide App</string>
+    <string name="title_activity_tech_demo">TechDemo</string>
+    <string name="techdemobuttonloc1">Location 1</string>
+    <string name="techdemobuttonloc2">Location 2</string>
+    <string name="app_name">Guide</string>
+    <string name="menu_settings">Settings</string>
+    <string name="desc_splash">splash screen image</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="text1">Coordinates</string>
+    <string name="text2">Temperature</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_mn">MainActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="start_button">Start!</string>
+    <string name="settings_button">Options</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="zombieCheckBox">Zombie Mode</string>
+    <string name="manualCheckBox">Manual Input</string>
+    <string name="mConfirmButton">Confirm</string>
+    <string name="initDestText">Next destination:</string>
+    <string name="timerDescText">Elapsed Time:</string>
+    <string name="saveButtonText">Save Progress</string>
+    <string name="pauseButtonText">Pause</string>
+    <string name="title_activity_tour">TourActivity</string>
+    <string name="recenterButtonText">Center</string>
+    <string name="title_activity_user_loc_overlay">UserLocOverlay</string>
+    <string name="menuTitleText">Guide App</string>
+    <string name="menuSpinnerPrompt">Select a tour</string>
+
+    <string-array name="tourTypes">
+        <item>Tour 1</item>
+        <item>Tour 2</item>
+        <item>Tour 3</item>
+        <item>Demo</item>
+    </string-array>
+
+    <string name="title_activity_demo_options">DemoOptionsActivity</string>
+
+</resources>

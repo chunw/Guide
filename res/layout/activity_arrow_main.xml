@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mapHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#258" >
+
+            <ImageView
+                android:id="@+id/arrowImageView"
+                android:layout_width="200dip"
+                android:layout_height="200dip"
+                android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mInfoHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/destDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initDestText"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/destTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/destDescTextView"
+            android:layout_toRightOf="@+id/destDescTextView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="20sp" />
+            
+
+        <TextView
+            android:id="@+id/statusDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/destDescTextView"
+            android:text="@string/statusDescText"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/statusDescTextView"
+            android:layout_toRightOf="@+id/statusDescTextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timerDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statusDescTextView"
+            android:text="@string/timerDescText"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/timerDescTextView"
+            android:layout_toRightOf="@+id/timerDescTextView"
+            android:textSize="20sp" />
+<!-- 
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timerDescTextView"
+            android:text="@string/saveButtonText"
+            android:textSize="20sp" />
+ -->
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timerDescTextView"
+            android:text="@string/pauseButtonText"
+            android:textSize="20sp"
+             />
+<!-- 
+        <Button
+            android:id="@+id/recenterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pauseButton"
+            android:layout_toRightOf="@+id/pauseButton"
+            android:text="@string/recenterButtonText"
+            android:textSize="20sp" />
+             -->
+    </RelativeLayout>
+
+</LinearLayout>

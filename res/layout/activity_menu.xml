@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuWrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/menuTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dip"
+        android:layout_marginTop="75dip"
+        android:text="@string/menuTitleText"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/lineOneHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuTitleTextView"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/menuSpinner"
+            android:padding="15dip"
+            android:text="@string/start_button" />
+
+        <Spinner
+            android:id="@+id/menuSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/start_button"
+            android:entries="@array/tourTypes"
+            android:minWidth="200dip"
+            android:prompt="@string/menuSpinnerPrompt" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/settingsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dip"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/gear" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/splashBackground" >
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="357dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/desc_splash"
+        android:src="@drawable/splash" />
+
+    <TextView
+        android:id="@+id/name1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashscreen"
+        android:layout_centerHorizontal="true"
+        android:text="@string/teamManager"
+        android:textColor="@color/nameColor" />
+
+    <TextView
+        android:id="@+id/name2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name1TextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/softwareArchitect"
+        android:textColor="@color/nameColor" />
+
+    <TextView
+        android:id="@+id/name3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name2TextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/guiDesigner"
+        android:textColor="@color/nameColor" />
+
+    <TextView
+        android:id="@+id/name4TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name3TextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/qaManager"
+        android:textColor="@color/nameColor" />
+
+</RelativeLayout>

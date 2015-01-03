@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mapHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <com.google.android.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tourMapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:apiKey="09mSTfxtn_mm5OyDhDdUJiMgXr5nnwvN-z75rpA"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mInfoHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/destDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initDestText"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/destTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/destDescTextView"
+            android:layout_alignBaseline="@+id/destDescTextView"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"/>
+            "
+        
+        <TextView
+            android:id="@+id/statusDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statusDescText"
+            android:layout_below="@+id/destDescTextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/statusDescTextView"
+            android:layout_alignBaseline="@+id/statusDescTextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timerDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statusDescTextView"
+            android:text="@string/timerDescText"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/timerDescTextView"
+            android:layout_alignBaseline="@+id/timerDescTextView"
+            android:textSize="20sp" />
+<!--
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveButtonText"
+            android:textSize="20sp"
+            android:layout_below="@+id/timerDescTextView"
+             />
+  -->      
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/timerDescTextView"
+            android:text="@string/pauseButtonText" />
+        
+        <Button
+            android:id="@+id/recenterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/pauseButton"
+            android:layout_toRightOf="@+id/pauseButton"
+            android:text="@string/recenterButtonText" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="PREFMAIN" >
+
+    <PreferenceCategory android:title="Settings" >
+        <ListPreference
+            android:defaultValue="30"
+            android:dialogTitle="Time between updates"
+            android:entries="@array/update_freq_options"
+            android:entryValues="@array/update_freq_values"
+            android:key="PREF_UPDATE_FREQ"
+            android:summary="Time between location updates"
+            android:title="Update Frequency" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="PREF_FEATURES"
+        android:title="Additional Features" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="PREF_TAG_MODE"
+            android:summary="Allows users to play tag (beta)"
+            android:title="Tag" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="PREF_MARIO_KART"
+            android:summary="Allows users to race (beta)"
+            android:title="Mario Kart" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="PREF_ZOMBIE_MODE"
+            android:summary="The user will be pursued by zombies (beta)"
+            android:title="Braaiiinsss" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="PREF_ARROW_MODE"
+            android:summary="The user will be guided by an arrow"
+            android:title="Arrow Mode" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
